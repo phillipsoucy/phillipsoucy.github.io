@@ -258,7 +258,7 @@ ul#nav li.current a { color: #517FC2; }
 #resume {
    background: #fff;
    padding-top: 90px;
-   padding-bottom: 72px;
+   padding-bottom: 40px;
    overflow: hidden;
 }
 
@@ -314,10 +314,11 @@ ul#nav li.current a { color: #517FC2; }
 /*----------------------------------------------*/
 
 .bars {
-	width: 95%;
+	width: 100%;
 	float: left;
 	padding: 0;
 	text-align: left;
+	margin-bottom:-20px;
 }
 .bars .skills {
   	margin-top: 36px;
@@ -354,9 +355,14 @@ ul#nav li.current a { color: #517FC2; }
 }
 
 .solidworks {
-  	width: 75%;
+  	width: 70%;
   	-moz-animation: solidworks 2s ease;
   	-webkit-animation: solidworks 2s ease;
+}
+.design {
+  	width: 25%;
+  	-moz-animation: design 2s ease;
+  	-webkit-animation: design 2s ease;
 }
 .abaqus {
   	width: 55%;
@@ -364,24 +370,28 @@ ul#nav li.current a { color: #517FC2; }
   	-webkit-animation: abaqus 2s ease;
 }
 .tests {
-  	width: 80%;
+  	width: 70%;
   	-moz-animation: tests 2s ease;
   	-webkit-animation: tests 2s ease;
 }
 .machining {
-  	width: 70%;
+  	width: 60%;
   	-moz-animation: machining 2s ease;
   	-webkit-animation: machining 2s ease;
 }
 .writing {
-  	width: 75%;
+  	width: 70%;
   	-moz-animation: writing 2s ease;
   	-webkit-animation: writing 2s ease;
 }
 
 @-moz-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes design {
+  0%   { width: 0px;  }
+  100% { width: 25%;  }
 }
 @-moz-keyframes abaqus {
   0%   { width: 0px;  }
@@ -389,20 +399,24 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-moz-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 70%;  }
 }
 
 @-webkit-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes design {
+  0%   { width: 0px;  }
+  100% { width: 25%;  }
 }
 @-webkit-keyframes abaqus {
   0%   { width: 0px;  }
@@ -410,15 +424,15 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-webkit-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 70%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -426,9 +440,9 @@ ul#nav li.current a { color: #517FC2; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+   background: #E9EBEB;
+   padding-top: 60px;
+   padding-bottom: 50px;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -592,154 +606,7 @@ ul#nav li.current a { color: #517FC2; }
    opacity: 0;
 }
 
-/* ------------------------------------------------------------------
-/* g. Quotes
-/* ------------------------------------------------------------------ */
-
-#quotes {
-   background: #1F1F1F url(../images/quotes-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
-}
-#quotes .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#quotes h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#quotes h1 span { display: none; }
-#quotes .header-col { padding-top: 9px; }
-#quotes .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f10d";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-
-/*	Blockquotes */
-#quotes blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#quotes blockquote:before { content: none; }
-#quotes blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
-   font-size: 24px;
-   line-height: 48px;
-   color: #fff
-}
-#quotes blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#quotes blockquote cite:before { content: "\2014 \0020"; }
-#quotes blockquote cite a,
-#quotes blockquote cite a:visited { color: #8B9798; border: none }
-
-/* Flex Slider
-/* ------------------------------------------------------------------ */
-
-/* Reset */
-.flexslider a:active,
-.flexslider a:focus  { outline: none; }
-.slides,
-.flex-control-nav,
-.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
-.slides li { margin: 0; padding: 0;}
-
-/* Necessary Styles */
-.flexslider {
-   position: relative;
-   zoom: 1;
-   margin: 0;
-   padding: 0;
-}
-.flexslider .slides { zoom: 1; }
-.flexslider .slides > li { position: relative; }
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container { zoom: 1; position: relative; }
-
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-   content: " ";
-   display: table;
-}
-.slides:after {
-   clear: both;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child { display: block; }
-
-/* Slider Styles */
-.slides { zoom: 1; }
-.slides > li {
-   /*margin-right: 5px; */
-   overflow: hidden;
-}
-
-/* Control Nav */
-.flex-control-nav {
-    width: 100%;
-    position: absolute;
-    bottom: -20px;
-    text-align: left;
-}
-.flex-control-nav li {
-    margin: 0 6px;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-}
-.flex-control-paging li a {
-    width: 12px;
-    height: 12px;
-    display: block;
-    background: #ddd;
-    background: rgba(255, 255, 255, .3);
-    cursor: pointer;
-    text-indent: -9999px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
-}
-.flex-control-paging li a:hover {
-    background: #CCC;
-    background: rgba(255, 255, 255, .7);
-}
-.flex-control-paging li a.flex-active {
-    background: #fff;
-    background: rgba(255, 255, 255, .9);
-    cursor: default;
-}
+/
 
 /* ------------------------------------------------------------------ */
 /* h. Contact Section
@@ -784,8 +651,10 @@ ul#nav li.current a { color: #517FC2; }
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
    text-align: justify;
+   margin-top:60px;
+   width:90%;
 }
-#contact .header-col { padding-top: 6px; }
+#contact .header-col { padding-top: 60px; }
 
 
 /* contact form */
