@@ -355,27 +355,27 @@ ul#nav li.current a { color: #517FC2; }
 }
 
 .solidworks {
-  	width: 70%;
+  	width: 60%;
   	-moz-animation: solidworks 2s ease;
   	-webkit-animation: solidworks 2s ease;
 }
 .design {
-  	width: 25%;
+  	width: 35%;
   	-moz-animation: design 2s ease;
   	-webkit-animation: design 2s ease;
 }
 .abaqus {
-  	width: 55%;
+  	width: 70%;
   	-moz-animation: abaqus 2s ease;
   	-webkit-animation: abaqus 2s ease;
 }
 .tests {
-  	width: 70%;
+  	width: 75%;
   	-moz-animation: tests 2s ease;
   	-webkit-animation: tests 2s ease;
 }
 .machining {
-  	width: 60%;
+  	width: 55%;
   	-moz-animation: machining 2s ease;
   	-webkit-animation: machining 2s ease;
 }
@@ -387,23 +387,23 @@ ul#nav li.current a { color: #517FC2; }
 
 @-moz-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes design {
   0%   { width: 0px;  }
-  100% { width: 25%;  }
+  100% { width: 35%;  }
 }
 @-moz-keyframes abaqus {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
 @-moz-keyframes writing {
   0%   { width: 0px;  }
@@ -412,23 +412,23 @@ ul#nav li.current a { color: #517FC2; }
 
 @-webkit-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes design {
   0%   { width: 0px;  }
-  100% { width: 25%;  }
+  100% { width: 35%;  }
 }
 @-webkit-keyframes abaqus {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 75%;  }
 }
 @-webkit-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
 @-webkit-keyframes writing {
   0%   { width: 0px;  }
@@ -555,12 +555,12 @@ ul#nav li.current a { color: #517FC2; }
 }
 .popup-modal .description-box p {
 	font: 14px/24px 'opensans-regular', sans-serif;
-   color: #A1A1A1;
+   color: #666666;
    margin-bottom: 12px;
 }
 .popup-modal .description-box .categories {
    font: 11px/21px 'opensans-light', sans-serif;
-   color: #A1A1A1;
+   color: #888888;
    text-transform: uppercase;
    letter-spacing: 2px;
    display: block;
