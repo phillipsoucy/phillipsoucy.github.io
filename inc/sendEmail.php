@@ -3,6 +3,18 @@
 // Replace this with your own email address
 $siteOwnersEmail = 'phillip.soucy@gmail.com';
 
+$opts = [
+        'http' => [
+                'method' => 'GET',
+                'header' => [
+                        'User-Agent: PHP'
+                ]
+        ]
+];
+
+$context = stream_context_create($opts);
+$content = file_get_contents("https://api.github.com/zen", false, $context);
+var_dump($content);
 
 if($_POST) {
 
@@ -29,7 +41,7 @@ if($_POST) {
 
    // Set Message
    $message .= "Email from: " . $name . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
