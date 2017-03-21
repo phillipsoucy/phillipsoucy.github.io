@@ -3,6 +3,9 @@
 *   Ceevee v1.0 Default Stylesheet
 *   url: styleshout.com
 *   03-17-2014
+*
+*   Rev 1.6.4
+*
 =====================================================================
 
 TOC:
@@ -147,7 +150,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #444444;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
