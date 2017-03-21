@@ -155,20 +155,17 @@
 	      method: "POST",
 	      data: data,
 	      dataType: "json",
-	      success: function(msg) {
-
-            // Message was sent
-            if (msg == 'email sent') {
+	      success: function() {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();   
-            }
+            	},	
             // There was an error
-            else {
+              error: function(err) {
                $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
+               $('#message-warning').html(err);
+	       $('#message-warning').fadeIn();
             }
 
 	      }
