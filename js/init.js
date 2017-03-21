@@ -152,7 +152,7 @@
       $.ajax({
 
 	      type: "POST",
-	      url: "https://www.dropbox.com/s/gplqyq6l2spkcwx/sendEmail.php?dl=1",
+	      url: "inc/sendEmail.php",
 	      data: data,
 	      success: function(msg) {
 
