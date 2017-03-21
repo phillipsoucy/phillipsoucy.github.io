@@ -151,10 +151,10 @@
 
       $.ajax({
 
-	      type: "POST",
-	      url: "inc/sendEmail.php",
+	      url: "https://formspree.io/phillip.soucy@gmail.com",
+	      method: "POST",
 	      data: data,
-		  headers: {'User-Agent':'phillipsoucy'},
+	      dataType: "json",
 	      success: function(msg) {
 
             // Message was sent
