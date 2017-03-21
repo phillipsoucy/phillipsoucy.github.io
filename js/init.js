@@ -168,8 +168,6 @@
 	       $('#message-warning').fadeIn();
             }
 
-	      }
-
       });
       return false;
    });
