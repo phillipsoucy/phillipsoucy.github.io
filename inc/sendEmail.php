@@ -3,19 +3,6 @@
 // Replace this with your own email address
 $siteOwnersEmail = 'phillip.soucy@gmail.com';
 
-$opts = [
-        'http' => [
-                'method' => 'GET',
-                'header' => [
-                        'User-Agent: PHP'
-                ]
-        ]
-];
-
-$context = stream_context_create($opts);
-$content = file_get_contents("https://api.github.com/zen", false, $context);
-var_dump($content);
-
 if($_POST) {
 
    $name = trim(stripslashes($_POST['contactName']));
@@ -54,7 +41,7 @@ if($_POST) {
 	$headers .= "Reply-To: ". $email . "\r\n";
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
+	$headers .= "User-Agent: Phillip-Soucy-Website-Form";
 
    if (!$error) {
 
