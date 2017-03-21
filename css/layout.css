@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 1.4
+*	Rev 1.6.4
 *
 =====================================================================
 
@@ -209,14 +209,12 @@ ul#nav li.current a { color: #517FC2; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #cccccc;
    text-align: justify;
 }
 #about p span{
-   line-height: 30px;
    color: #fff;
-   test-weight: bold;
-   text-align: justify;
+   font-weight: bold;
 }
 #about p a:hover{color: #517FC2;}
 
@@ -296,7 +294,7 @@ ul#nav li.current a { color: #517FC2; }
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #444444;
    margin-bottom: 8px;
    margin-top: 6px;
 }
@@ -450,7 +448,7 @@ ul#nav li.current a { color: #517FC2; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #606060;
 }
 
 /* Portfolio Content */
@@ -616,7 +614,7 @@ ul#nav li.current a { color: #517FC2; }
    background: #191919;
    padding-top: 60px;
    padding-bottom: 102px;
-   color: #636363;
+   color: #999999;
 }
 #contact .section-head { margin-bottom: 42px; }
 
