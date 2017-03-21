@@ -158,7 +158,7 @@
 	      success: function(msg) {
 
             // Message was sent
-            if (msg == 'OK') {
+            if (msg == 'email sent') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
