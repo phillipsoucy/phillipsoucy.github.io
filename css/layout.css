@@ -442,7 +442,7 @@ ul#nav li.current a { color: #517FC2; }
 #portfolio {
    background: #E9EBEB;
    padding-top: 60px;
-   padding-bottom: 50px;
+   padding-bottom: 40px;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -606,7 +606,7 @@ ul#nav li.current a { color: #517FC2; }
    opacity: 0;
 }
 
-/
+
 
 /* ------------------------------------------------------------------ */
 /* h. Contact Section
@@ -614,7 +614,7 @@ ul#nav li.current a { color: #517FC2; }
 
 #contact {
    background: #191919;
-   padding-top: 96px;
+   padding-top: 60px;
    padding-bottom: 102px;
    color: #636363;
 }
@@ -651,10 +651,10 @@ ul#nav li.current a { color: #517FC2; }
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
    text-align: justify;
-   margin-top:60px;
-   width:90%;
+   /* margin-top:60px;
+   width:90%; */
 }
-#contact .header-col { padding-top: 60px; }
+#contact .header-col { padding-top: 6px; }
 
 
 /* contact form */
@@ -726,25 +726,6 @@ ul#nav li.current a { color: #517FC2; }
    position: relative;
    left: 18px;
    top: 17px;
-}
-
-
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
 }
 
 
