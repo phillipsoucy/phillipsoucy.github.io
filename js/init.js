@@ -154,7 +154,7 @@
 	      type: "POST",
 	      url: "inc/sendEmail.php",
 	      data: data,
-		  headers: {'User-Agent':'phillipsoucy'}
+		  headers: {'User-Agent':'phillipsoucy'},
 	      success: function(msg) {
 
             // Message was sent
