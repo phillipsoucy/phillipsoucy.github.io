@@ -354,7 +354,7 @@ ul#nav li.current a { color: #517FC2; }
 }
 
 .solidworks {
-  	width: 60%;
+  	width: 70%;
   	-moz-animation: solidworks 2s ease;
   	-webkit-animation: solidworks 2s ease;
 }
@@ -364,7 +364,7 @@ ul#nav li.current a { color: #517FC2; }
   	-webkit-animation: design 2s ease;
 }
 .abaqus {
-  	width: 70%;
+  	width: 85%;
   	-moz-animation: abaqus 2s ease;
   	-webkit-animation: abaqus 2s ease;
 }
@@ -374,19 +374,19 @@ ul#nav li.current a { color: #517FC2; }
   	-webkit-animation: tests 2s ease;
 }
 .machining {
-  	width: 55%;
+  	width: 60%;
   	-moz-animation: machining 2s ease;
   	-webkit-animation: machining 2s ease;
 }
 .writing {
-  	width: 70%;
+  	width: 90%;
   	-moz-animation: writing 2s ease;
   	-webkit-animation: writing 2s ease;
 }
 
 @-moz-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes design {
   0%   { width: 0px;  }
@@ -394,7 +394,7 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-moz-keyframes abaqus {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 85%;  }
 }
 @-moz-keyframes tests {
   0%   { width: 0px;  }
@@ -402,16 +402,16 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-moz-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 90%;  }
 }
 
 @-webkit-keyframes solidworks {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes design {
   0%   { width: 0px;  }
@@ -419,7 +419,7 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-webkit-keyframes abaqus {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 85%;  }
 }
 @-webkit-keyframes tests {
   0%   { width: 0px;  }
@@ -427,11 +427,11 @@ ul#nav li.current a { color: #517FC2; }
 }
 @-webkit-keyframes machining {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 90%;  }
 }
 
 /* ------------------------------------------------------------------ */
