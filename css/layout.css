@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 1.6.4
+*	Rev 2.0
 *
 =====================================================================
 
@@ -189,61 +189,164 @@ ul#nav li.current a { color: #517FC2; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. About Section - Dark
 /* ------------------------------------------------------------------ */
 
-#about {
+#about,#mechlab,#fittings{
    background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #517FC2; }
+#about a,#mechlab a,#fittings a,#about a:visited,#mechlab a:visited,#fittings a:visited {color: #fff;}
+#about a:hover,#mechlab a:hover,#fittings a:hover,#about a:focus,#mechlab a:focus,#fittings a:focus {color: #517FC2;}
 
-#about h2 {
+#about h2,#mechlab h2,#fittings h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
-#about p {
+#about p,#mechlab p,#fittings p{
    line-height: 30px;
    color: #cccccc;
    text-align: justify;
 }
 #about p span{
-   color: #fff;
+   color: #cccccc;
    font-weight: 600;
    letter-spacing: .02em;
 }
-#about p a:hover{color: #517FC2;}
+#mechlab p span,#fittings p span{
+   line-height: 30px;
+   color: #cccccc;
+   font-style: italic;
+}
+#mechlab p.fig,#fittings p.fig{
+   line-height: 30px;
+   color: #cccccc;
+   font-style: italic;
+   text-align: center;
+   width: 80%;
+   margin: auto;
+}
+#about p a:hover,#mechlab p a:hover,#fittings p a:hover{color: #517FC2;}
 
-#about .profile-pic {
+#mechlab .overview-pic,#fittings .overview-pic{
+   position: relative;
+   width: 200px;
+   height: 200px;
+}
+#mechlab .pic,#fittings .pic{
+   display: block;
+   margin: auto;
+   width: 95%;
+   margin: auto;
+}
+#about .profile-pic{
    position: relative;
    width: 200px;
    height: 200px;
    border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
-#about .download {
+#about .contact-details,#mechlab .contact-details,#fittings .contact-details,{ width: 41.66667%; }
+#about .download,#mechlab .download,,#fittings .download{
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
-#about .download .button {
+#about .main-col,#mechlab .main-col,#fittings .main-col{ padding-right: 5%; }
+#about .download .button,#mechlab .download .button,#fittings .download .buttonn {
    margin-top: 6px;
    background: #444;
 }
-#about .download .button:hover {
+#about .download .button:hover,#mechlab .download .button:hover,#fittings .download .button:hover{
    background: #517FC2;
    color: #2B2B2B;
 }
-#about .download .button i {
+#about .download .button i ,#mechlab .download .button i ,#fittings .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
-#about .signature {
+#about .signature ,#mechlab .signature  ,#fittings .signature {
+   position: relative;
+   top: 10px;
+   right: 50px;
+   width: 175px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Section - Light
+/* ------------------------------------------------------------------ */
+
+#bop,#transmission{
+   background: #fff;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#bop a,#transmission a, #bop a:visited,#transmission a:visited  { color: #517FC2; }
+#bop a:hover,#transmission a:hover, #bop a:focus,#transmission a:focus { color: #313131; }
+
+#bop h2,#transmission h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   margin-bottom: 12px;
+}
+#bop p,#transmission p {
+   line-height: 30px;
+   color: #444444;
+   text-align: justify;
+}
+#bop p span,#transmission p span{
+   color: #444444;
+   font-style: italic;
+}
+#bop p.fig,#transmission p.fig{
+   line-height: 30px;
+   color: #444444;
+   font-style: italic;
+   text-align: center;
+   width: 80%;
+   margin: auto;
+}
+#bop p a:hover,#transmission p a:hover{color: #517FC2;}
+
+#bop .overview-pic,#transmission .overview-pic {
+   position: relative;
+   width: 200px;
+   height: 200px;
+}
+#bop .pic,#transmission .pic{
+   display: block;
+   margin: auto;
+   width: 95%;
+   margin: auto;
+}
+#bop .video{
+   display: block;
+   margin: auto;
+   width: 95%;
+   margin: auto;
+}
+#bop .contact-details,#transmission .contact-details { width: 41.66667%; }
+#bop .download,#transmission .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#bop .main-col,#transmission .main-col { padding-right: 5%; }
+#bop .download .button,#transmission .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#bop .download .button:hover,#transmission .download .button:hover {
+   background: #517FC2;
+   color: #2B2B2B;
+}
+#bop .download .button i ,#transmission .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+#bop .signature ,#transmission .signature {
    position: relative;
    top: 10px;
    right: 50px;
@@ -554,12 +657,12 @@ ul#nav li.current a { color: #517FC2; }
 }
 .popup-modal .description-box p {
 	font: 14px/24px 'opensans-regular', sans-serif;
-   color: #666666;
+   color: #444444;
    margin-bottom: 12px;
 }
 .popup-modal .description-box .categories {
-   font: 11px/21px 'opensans-light', sans-serif;
-   color: #888888;
+   font: 11px/21px 'opensans', sans-serif;
+   color: #444444;
    text-transform: uppercase;
    letter-spacing: 2px;
    display: block;
@@ -570,12 +673,12 @@ ul#nav li.current a { color: #517FC2; }
 }
 .popup-modal .link-box {
    padding: 18px 36px;
-   background: #111;
+   background: #fff;
    text-align: left;
 }
 .popup-modal .link-box a {
-   color: #fff;
-	font: 11px/21px 'opensans-bold', sans-serif;
+   color: #444444;
+	font: 12px/21px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;

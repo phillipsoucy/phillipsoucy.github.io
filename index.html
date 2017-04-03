@@ -8,7 +8,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Meet Phillip Soucy</title>
-	<meta name="description" content="Resume and Portfolio Page for Phillip Soucy, Cambridge, MA based mechanical engineer.">
+	<meta name="description" content="Resume Page for Phillip Soucy, Cambridge, MA based mechanical engineer.">
 	<meta name="author" content="Phillip Soucy">
 
    <!-- Mobile Specific Metas
@@ -50,8 +50,8 @@
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-<!--            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
- -->           <li><a class="smoothscroll" href="#contact">Contact</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+           <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -293,25 +293,56 @@
 
    <!-- Portfolio Section
    ================================================== -->
-<!--   <section id="portfolio">
+   <section id="portfolio">
 
       <div class="row">
 
          <div class="twelve columns collapsed">
 
             <h1>Check Out Some of My Projects.</h1>
-
-			<h3 align="center">Oh snap! I'm currently updating this section.<br></h3>
-			<p align="center">In the meantime, please <a class="smoothscroll" href="#contact">get in touch</a> for additional information.</p>
-			
+		
             <!-- portfolio-wrapper -->
-<!--            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-mechlab" title="">
+                        <img alt="" src="images/mechlab/lab.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Mechatronics Lab for Graduate Students</h5>
+                              <p>Academic Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-bop" title="">
+                        <img alt="" src="images/bop/bop.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Oil Platform Blowout Preventer Failure</h5>
+                              <p>Litigation Support</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
           	   <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/plumbing.jpg">
+                     <a href="#modal-fittings" title="">
+                        <img alt="" src="images/fittings/fittings.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Brass Fittings in Potable Water Systems</h5>
@@ -324,28 +355,11 @@
                   </div>
           		</div> <!-- item end -->
 
-<!--               <div class="columns portfolio-item">
+               <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/bop.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Oil Platform Blowout Preventer Failure</h5>
-                              <p>Litigation Support</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-<!--               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/transmission.jpg">
+                     <a href="#modal-transmission" title="">
+                        <img alt="" src="images/transmission/transmission.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Electrical Transmission Line Arm Failure</h5>
@@ -358,102 +372,91 @@
                   </div>
           		</div> <!-- item end -->
 
-<!--               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+            </div> <!-- portfolio-wrapper end -->
 
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/lab.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Mechatronics Lab for Graduate Students</h5>
-                              <p>Academic Project</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-<!--            </div> <!-- portfolio-wrapper end -->
-
-<!--         </div> <!-- twelve columns end -->
+         </div> <!-- twelve columns end -->
 
 
          <!-- Modal Popup
 	      --------------------------------------------------------------- -->
 
-<!--         <div id="modal-01" class="popup-modal mfp-hide">
+		   <div id="modal-mechlab" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-plumbing.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/mechlab/m-lab.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>Brass Fittings in Potable Water Systems</h4>
-			      <p>Summary of project.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Failure Analysis, Evidence Inspection, Test Design</span>
+			      <h4>Mechatronics Lab for Graduate Students</h4>
+			      <p>For one of my graduate mechatronics projects, my team had to design a lab for future student. Using simple components, we
+				  designed a short take-home lab which involved physical experimentation, as well as analytical (Simulink) modeling.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Systems, Mechatronics, Technical Writing</span>
 		      </div>
 
             <div class="link-box">
-               <a href="https://www.behance.net/gallery/50176739/Brass-Fittings-in-Potable-Water-Systems">Details</a>
+               <a href="portfolio/portfolio.html#mechlab">Details</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
+	      </div><!-- modal-04 End -->
+		  
 	      </div><!-- modal-01 End -->
 
-<!--         <div id="modal-02" class="popup-modal mfp-hide">
+         <div id="modal-bop" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-bop.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/bop/m-bop.jpg" alt="" />
 
 		      <div class="description-box">
 			      <h4>Oil Platform Blowout Preventer Failure</h4>
-			      <p>Summary of project.</p>
+			      <p>After an oil rig failed catastrophically, my team and I determined that third-party components were installed
+					in the failsafe valves. I conducted a comprehensive FEA analysis to determine if these components, known as packers, could have been the cause.</p>
                <span class="categories"><i class="fa fa-tag"></i>Failure Analysis, FEA</span>
 		      </div>
 
             <div class="link-box">
-               <a href="https://www.behance.net/gallery/50176843/Oil-Platform-Blowout-Preventer-Failure">Details</a>
+               <a href="portfolio/portfolio.html#bop">Details</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
 	      </div><!-- modal-02 End -->
+		  
+         <div id="modal-fittings" class="popup-modal mfp-hide">
 
-<!--         <div id="modal-03" class="popup-modal mfp-hide">
+		      <img class="scale-with-grid" src="images/fittings/m-fittings.jpg" alt="" />
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-transmission.jpg" alt="" />
+		      <div class="description-box">
+			      <h4>Brass Fittings in Potable Water Systems</h4>
+			      <p>A class-action lawsuit was filed against a brass plumbing manufacturer, claiming premature corrosion. My team and 
+				  I tested hundreds of samples to determine if these failures were due to manuafacturing or installation.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Failure Analysis, Evidence Inspection, Test Design</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="portfolio/portfolio.html#fittings">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>		  
+		  
+      </div> <!-- row End -->
+
+         <div id="modal-transmission" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/transmission/m-transmission.jpg" alt="" />
 
 		      <div class="description-box">
 			      <h4>Electrical Transmission Line Arm Failure</h4>
-			      <p>Summary of project.</p>
+			      <p>Several hundres miles of high-voltage electric transmission lines began failing shortly after installation.
+				  I developed a full-contact FEA model simulating the stress involved with installing the arms on the poles, as well the active service loads.</p>
                <span class="categories"><i class="fa fa-tag"></i>Commercial, Evidence Inspection, FEA</span>
 		      </div>
 
             <div class="link-box">
-               <a href="https://www.behance.net/gallery/50176893/Electrical-Transmission-Line-Arm-Failure">Details</a>
+               <a href="portfolio/portfolio.html#transmission">Details</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
 	      </div><!-- modal-03 End -->
 
-<!--         <div id="modal-04" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-lab.jpg" alt="" />
 
-		      <div class="description-box">
-			      <h4>Mechatronics Lab for Graduate Students</h4>
-			      <p>Summary of project.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Systems, Mechatronics, Technical Writing</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://www.behance.net/gallery/50176963/Mechatronics-Lab-for-Graduate-Students">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-
- <!--     </div> <!-- row End -->
-
- <!--  </section> <!-- Portfolio Section End-->
+   </section> <!-- Portfolio Section End-->
 
 
 
@@ -562,7 +565,7 @@
 
             <ul class="copyright">
                <li>&copy; Copyright 2017 Phillip A. Soucy</li>
-			   <li>Rev 1.6.4</li> 
+			   <li>Rev 2.0</li> 
                <li>Graciously design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
             </ul>
 

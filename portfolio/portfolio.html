@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Portfolio</title>
+	<meta name="description" content="Portfolio Page for Phillip Soucy, Cambridge, MA based mechanical engineer.">
+	<meta name="author" content="Phillip Soucy">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific-popup.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicon
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <section id="top">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" class="nav">
+            <li><a href="../index.html#portfolio">Return to Home</a></li>
+			<li><a class="smoothscroll" href="#mechlab">Mechatronics Lab</a></li>
+			<li><a class="smoothscroll" href="#bop">BOP Failure</a></li>
+			<li><a class="smoothscroll" href="#fittings">Brass Fittings</a></li>
+			<li><a class="smoothscroll" href="#transmission">Transmission Arms</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+   </section> <!-- Header End -->
+
+   <!-- Graduate Section
+   ================================================== -->
+   <section id="mechlab">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/mechlab/lab.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Mechatronics Lab for Graduate Students</h2>
+
+            <p> For my graduate mechatronics course, small teams were asked to take a simple principle of 
+			mechatronics and develop a short (6-8 hour) lab based on that principle for future classes. My team was tasked
+			with using strain gauges and instrument amplification. We elected to develop a lab to demonstrate how a simple
+			instrument amplification (InAmp) chip and Arduino UNO could be used in junction with strain gauges to study and
+			characterize a relatively complex dynamic mechanical system. My role in this project was group leader, primarily
+			for document and timeline organization, as well as designing and implementing the physical system, showing that
+			the analytical approximation correlates well with this system.</p>
+			
+			<img class="pic"  src="../images/mechlab/mechlab_diagram.jpg"/>
+			<p class="fig">Figure 1: Schematic of electromechanical components.<p>
+			
+			<p> I designed a vibrating cantilever beam system, excited by a stepper motor and eccentric mass at the tip of the
+			beam. A diagram of the system is shown in Figure 1. Special considerations during this process included selected a 
+			beam geometry which had a natural frequency safely below the Nyquist frequency of the UNO. In addition, the peak amplitude 
+			had to be large enough to be detected by the InAmp and UNO circuit, but not so large as to cause plastic deformation at 
+			the base, which would have damaged the strain gauges. Figure 2 shows the final experimental system.</p>
+			
+			<img class="pic"  src="../images/mechlab/mechlab_overview.jpg"/>
+			<p class="fig">Figure 2: Overview of final experimental system. The black box holds all the electronics, with the exception of the motor shield, which needed to be unplugged for certain tests.<p>
+			
+			<p> After verifying our experimental and analytical systems, my team and I drafted a comprehensive lab pack 
+			(which can be downloaded <a href="..\portfolio\docs\Cantilever Dynamics Lab Pack.zip" target="_blank">here</a>). I was primarily focused on the lab instructions, while my teammates created a solution
+			manual and organized our presentation.</p>
+			
+			<img class="pic"  src="../images/mechlab/mechlab_results.jpg"/>
+			<p class="fig">Figure 3: Sample experimental data during pluck test, plotted over time in Excel. Clipping occurs due to the UNO being unable to detect negative voltages.<p>
+			
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+   </section> <!-- About Section End-->
+   
+     
+   
+      <!-- BOP Section
+   ================================================== -->
+   <section id="bop">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/bop/bop.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Oil Platform Blowout Preventer Failure</h2>
+
+            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
+			
+			<p>In the spring of 2011, an oil well began flowing at the surface, what is referred to 
+			as a blowout. All oil rigs are equipped with failsafe hydraulic shutoff values, known as 
+			a blowout preventer (BOP). However, when the rig BOPs were activated, the well continued 
+			to flow at the surface, causing the rig and well to be lost in an explosion (Figure 1). 
+			The resulting damages were claimed for over $5M in losses.</p>
+			
+			<img class="pic"  src="../images/bop/bop_failure.jpg"/>
+			<p class="fig">Figure 1: Photograph of the well fire caused by the failed safety component.<p>
+			
+			<p>During the evidence tear-down and document review process, my group determined that 
+			certain critical components were not OEM parts, but rather less expensive third-party 
+			components. After many years of discussion between the insurance, operating, and well 
+			owning companies, there was no consensus as to whether the BOP failure was due to manufacturing 
+			differences between these components, known as packers, or if it was operator error. My team 
+			was again retained for an analytical comparative study of the OEM and third-party packers.</p>
+			
+			<img class="pic"  src="../images/bop/bop_packers.jpg"/>
+			<p class="fig">Figure 2: CAD model of dissimilar packer plate geometries in Abaqus CAE.<p>
+			
+			<p>During this process, my role was inspecting, dimensioning, and modeling the two packer 
+			geometries, as well as simulating the BOP activation process with each to determine if the 
+			geometric differences had a significant impact in the sealing progressing of the well. The 
+			models were a combination of 3D hyperelastic elastomer elements, non-deformable skeletal support 
+			geometry, and analytical-rigid surfaces (Figure 2). The results of my simulations showed that 
+			the sealing pattern was significantly different and, when compared with the erosion patterns
+			within the subject BOP, were the most likely cause of the well failure. The differences in 
+			sealing patterns are shown in Video 1, which has been sensored for confidentiality. The video 
+			will play the sealing sequence twice, the first to show the progression, the second to emphasize 
+			the comparison with the physical evidence extracted from the well.</p>
+			
+			<video class="video" controls>
+				<source src="../images/bop/bop_video.mp4">
+				Your browser does not support this video type.
+			</video>
+			<p class="fig">Video 1: Time progression of dissimilar packers closing on pipe. Surfaces not in contact are shown as red, while sealed surfaces are shown as green.<p>
+			
+			<p>While this case did go to trial, a settlement was made before the evidence went to deliberation. 
+			This outcome was attributed primarily to the analytical analysis performed by myself and my team.</p>
+			
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+
+   </section> <!-- About Section End-->
+   
+   <!-- Fittings Section
+   ================================================== -->
+   <section id="fittings">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/fittings/fittings.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Brass Fittings in Potable Water Systems</h2>
+
+            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
+			
+			<p>Over the course of several years, various consumer complaints were made that a particular 
+			brand of brass fitting was resulting in property damage due to premature corrosion and subsequent 
+			plumbing leakage. Due to the scale of potential damages, a class action lawsuit was filed against
+			the manufacturer. My team was retained to evaluate these fittings and determine the underlying 
+			cause of any premature failure.</p>
+			
+			<img class="pic"  src="../images/fittings/fittings_evidence.jpg"/>
+			<p class="fig">Figure 1: Example of extracted evidence, which includes fittings and tubing.<p>			
+						
+			<p>My role in this investigation was primarily focused around extracted evidence (an example shown in Figure 1). 
+			I photographed, categorized, and inventoried thousands of samples, developed test protocols, 
+			and conducted inter-party inspections over the course of a year. The tests varied in complexity, ranging from 
+			a simple microscopy to accelerated environmental exposure.</p>
+			
+			<img class="pic"  src="../images/fittings/fittings_sample.jpg"/>
+			<p class="fig">Figure 2: Examplary sample that had been sectioned, mounted, polished, and imaged under a microscope to study the
+			corrosion of the brass.<p>	
+			
+			<p>Most notable was a three-day leak-testing inspection involving three separate parties, in 
+			which approximately 200 extracted samples were photographed and leak tested at our facilities. 
+			I oversaw the testing and sample organization, as well 
+			maintaining notes and records of the 10 lawyers and experts present as witnesses of the inspection. 
+			In addition to leak testing, I also developed and conducted the test protocol for additional sample 
+			tear-down, mounting, polishing, and microscopic metallurgical examination (shown in Figure 2).</p>
+			
+
+			
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+   </section> <!-- About Section End-->
+   
+<!-- Transmission Section
+   ================================================== -->
+   <section id="transmission">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/transmission/transmission.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Electrical Transmission Arm Failures</h2>
+
+            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
+			
+			<p>In the fall of 2013, multiple high-power electrical transmission tower arms began showing
+			signs of cracking at the weld between the arm and mounting bracket (Figure 1). In some cases,
+			the arm completely fractured from the bracket, leading to hundreds of miles of transmission arms 
+			being taken out of service for inspection. Our client retained my group for a comprehensive 
+			analysis of the failure, based on wind and arm strain data collected before the arms were removed
+			from service. My role was to review the provided manufacturing and installation documentation, 
+			inspect the subject arm brackets, and develop a versatile finite element model to explore our failure
+			mode hypotheses.</p>
+			
+			<img class="pic"  src="../images/transmission/transmission_failure.jpg"/>
+			<p class="fig">Figure 1: Example of failed bracket arm, showing arm separated from bracket at the weld.<p>
+			
+			<p>Based on the manufacturing design specifications, I modelled the arm and bracket in Solidworks
+			and imported the geometry to Abaqus CAE. After meshing and boundary conditions, I used the strain
+			data from the previous wind studies to validate my model. My initial results, using a simple static
+			model, suggested that service loads alone could not have caused the premature weld fractures. After 
+			a physical examination of multiple subject failed arms, I determined that the spacing between the 
+			mounting plates of the bracket was regularly over-tolerance. In addition, I reviewed the field installation
+			notes, which showed inconsistent bolt tightening sequences and torques. To estimate the effects of these 
+			pre-service defects, I expanded the static model to include full-contact bolting of the arm to the pole, 
+			which I manipulated to consider various arm manufacturing and installation scenarios.</p>
+			
+			<img class="pic"  src="../images/transmission/transmission_contours.jpg"/>
+			<p class="fig">Figure 2: Estimated stress countours resulting from bracket design and installation errors.<p>
+			
+			<p>My results, shown in Figure 2, demonstrated that with a gap at the maximum design tolerance, smaller 
+			than the gap recorded during the inspection, and a correct bolt tightening sequence and torque, the stress 
+			in the weld would surpass yield in static conditions. Accounting for the additional effects of cycling 
+			dynamic wind loads, I demonstrated that the arm design tolerances would cause the welds to fail by yield 
+			and fatigue well before their expected service life. Based on my findings and our full report, our 
+			client was able to begin taking corrective action and consider liabilities.</p>
+			
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+
+   </section> <!-- About Section End-->
+   
+     
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/phillipsoucy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/philnyethescienceguy/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="http://steamcommunity.com/id/SaintVenant/" target="_blank"><i class="fa fa-steam-square"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2017 Phillip A. Soucy</li>
+			   <li>Rev 2.0</li> 
+               <li>Graciously design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-up-open"></i></a></div>
+
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
