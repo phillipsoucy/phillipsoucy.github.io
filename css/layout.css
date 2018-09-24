@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 2.0
+*	Rev 3.0
 *
 =====================================================================
 
@@ -381,9 +381,14 @@ ul#nav li.current a { color: #517FC2; }
 }
 #resume p {
    text-align: justify;
+   margin-right: -50px;
    margin-bottom: 25px;
 }
-
+#resume .a {
+   margin-left: 20px;
+   margin-right: -60px;
+   line-height: 25px;
+}
 #resume p span {
    font-weight: bold;
 }
@@ -396,6 +401,22 @@ ul#nav li.current a { color: #517FC2; }
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+
+.alignleft {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #444444;
+   margin-bottom: 8px;
+   margin-top: 6px;
+   float: left;
+}
+.alignright {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #444444;
+   margin-bottom: 8px;
+   margin-top: 6px;
+   float: right;
+}
+
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #444444;
@@ -456,85 +477,87 @@ ul#nav li.current a { color: #517FC2; }
    border-radius: 3px 0 0 3px;
 }
 
-.solidworks {
-  	width: 70%;
-  	-moz-animation: solidworks 2s ease;
-  	-webkit-animation: solidworks 2s ease;
+.writing {
+  	width: 85%;
+  	-moz-animation: writing 2s ease;
+  	-webkit-animation: writing 2s ease;
+}
+.cad {
+  	width: 75%;
+  	-moz-animation: cad 2s ease;
+  	-webkit-animation: cad 2s ease;
+}
+.tests {
+  	width: 65%;
+  	-moz-animation: tests 2s ease;
+  	-webkit-animation: tests 2s ease;
 }
 .design {
-  	width: 35%;
+  	width: 55%;
   	-moz-animation: design 2s ease;
   	-webkit-animation: design 2s ease;
 }
 .abaqus {
-  	width: 85%;
+  	width: 55%;
   	-moz-animation: abaqus 2s ease;
   	-webkit-animation: abaqus 2s ease;
 }
-.tests {
-  	width: 75%;
-  	-moz-animation: tests 2s ease;
-  	-webkit-animation: tests 2s ease;
-}
-.machining {
-  	width: 60%;
-  	-moz-animation: machining 2s ease;
-  	-webkit-animation: machining 2s ease;
-}
-.writing {
-  	width: 90%;
-  	-moz-animation: writing 2s ease;
-  	-webkit-animation: writing 2s ease;
+.management {
+  	width: 50%;
+  	-moz-animation: management 2s ease;
+  	-webkit-animation: management 2s ease;
 }
 
-@-moz-keyframes solidworks {
-  0%   { width: 0px;  }
-  100% { width: 70%;  }
-}
-@-moz-keyframes design {
-  0%   { width: 0px;  }
-  100% { width: 35%;  }
-}
-@-moz-keyframes abaqus {
+
+@-moz-keyframes writing {
   0%   { width: 0px;  }
   100% { width: 85%;  }
+}
+@-moz-keyframes cad {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 65%;  }
 }
-@-moz-keyframes machining {
+@-moz-keyframes design {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
-@-moz-keyframes writing {
+@-moz-keyframes abaqus {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 55%;  }
+}
+@-moz-keyframes management {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
 }
 
-@-webkit-keyframes solidworks {
-  0%   { width: 0px;  }
-  100% { width: 70%;  }
-}
-@-webkit-keyframes design {
-  0%   { width: 0px;  }
-  100% { width: 35%;  }
-}
-@-webkit-keyframes abaqus {
+
+@-webkit-keyframes writing {
   0%   { width: 0px;  }
   100% { width: 85%;  }
 }
-@-webkit-keyframes tests {
+@-webkit-keyframes cad {
   0%   { width: 0px;  }
   100% { width: 75%;  }
 }
-@-webkit-keyframes machining {
+@-webkit-keyframes tests {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 65%;  }
 }
-@-webkit-keyframes writing {
+@-webkit-keyframes design {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes abaqus {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes management {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
 }
 
 /* ------------------------------------------------------------------ */
