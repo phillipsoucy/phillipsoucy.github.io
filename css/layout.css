@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 3.0
+*	Rev 3.0.1
 *
 =====================================================================
 
@@ -82,10 +82,14 @@ header .banner-text h3 a {
 header .banner-text h3 a:hover{color: #0a58cb;}
 
 header .banner-text hr {
-   width: 60%;
+   border: 0; 
+   height: 1px; 
+   background-image: -webkit-linear-gradient(left, rgba(240, 240, 240, 0), #8c8b8b, rgba(240, 240, 240, 0));
+   background-image: -moz-linear-gradient(left, rgba(240, 240, 240, 0), #8c8b8b, rgba(240, 240, 240, 0));
+   background-image: -ms-linear-gradient(left, rgba(240, 240, 240, 0), #8c8b8b, rgba(240, 240, 240, 0));
+   background-image: -o-linear-gradient(left, rgba(240, 240, 240, 0), #8c8b8b, rgba(240, 240, 240, 0));
+   width: 70%;
    margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
 }
 
 /* header social links */
