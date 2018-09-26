@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 3.0.1
+*	Rev 3.1
 *
 =====================================================================
 
@@ -196,22 +196,22 @@ ul#nav li.current a { color: #517FC2; }
 /* c. About Section - Dark
 /* ------------------------------------------------------------------ */
 
-#about,#mechlab,#fittings{
+#about,#mechlab,#fittings,#record{
    background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a,#mechlab a,#fittings a,#about a:visited,#mechlab a:visited,#fittings a:visited {color: #fff;}
+#about a,#mechlab a,#fittings a,#record a,#about a:visited,#mechlab a:visited,#fittings a:visited,#record a:visited {color: #fff;}
 #about a:hover,#mechlab a:hover,#fittings a:hover,#about a:focus,#mechlab a:focus,#fittings a:focus {color: #517FC2;}
 
-#about h2,#mechlab h2,#fittings h2 {
+#about h2,#mechlab h2,#fittings h2, #record h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
-#about p,#mechlab p,#fittings p{
+#about p,#mechlab p,#fittings p, #record p{
    line-height: 30px;
    color: #cccccc;
    text-align: justify;
@@ -221,12 +221,12 @@ ul#nav li.current a { color: #517FC2; }
    font-weight: 600;
    letter-spacing: .02em;
 }
-#mechlab p span,#fittings p span{
+#mechlab p span,#fittings p span,#record p span{
    line-height: 30px;
    color: #cccccc;
    font-style: italic;
 }
-#mechlab p.fig,#fittings p.fig{
+#mechlab p.fig,#fittings p.fig,#record p.fig{
    line-height: 30px;
    color: #cccccc;
    font-style: italic;
@@ -234,14 +234,14 @@ ul#nav li.current a { color: #517FC2; }
    width: 80%;
    margin: auto;
 }
-#about p a:hover,#mechlab p a:hover,#fittings p a:hover{color: #517FC2;}
+#about p a:hover,#mechlab p a:hover,#fittings p a:hover,#record p a:hover{color: #517FC2;}
 
-#mechlab .overview-pic,#fittings .overview-pic{
+#mechlab .overview-pic,#fittings .overview-pic,#record .overview-pic{
    position: relative;
    width: 200px;
    height: 200px;
 }
-#mechlab .pic,#fittings .pic{
+#mechlab .pic,#fittings .pic,#record .pic{
    display: block;
    margin: auto;
    width: 95%;
@@ -253,25 +253,25 @@ ul#nav li.current a { color: #517FC2; }
    height: 200px;
    border-radius: 100%;
 }
-#about .contact-details,#mechlab .contact-details,#fittings .contact-details,{ width: 41.66667%; }
+#about .contact-details,#mechlab .contact-details,#fittings .contact-details,#record .contact-details{ width: 41.66667%; }
 #about .download,#mechlab .download,,#fittings .download{
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col,#mechlab .main-col,#fittings .main-col{ padding-right: 5%; }
-#about .download .button,#mechlab .download .button,#fittings .download .buttonn {
+#about .main-col,#mechlab .main-col,#fittings .main-col,#record .main-col{ padding-right: 5%; }
+#about .download .button,#mechlab .download .button,#fittings .download .button,#record .download .button {
    margin-top: 6px;
    background: #444;
 }
-#about .download .button:hover,#mechlab .download .button:hover,#fittings .download .button:hover{
+#about .download .button:hover,#mechlab .download .button:hover,#fittings .download .button:hover,#record .download .button:hover{
    background: #517FC2;
    color: #2B2B2B;
 }
-#about .download .button i ,#mechlab .download .button i ,#fittings .download .button i {
+#about .download .button i ,#mechlab .download .button i ,#fittings .download .button i ,#record .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
-#about .signature ,#mechlab .signature  ,#fittings .signature {
+#about .signature ,#mechlab .signature  ,#fittings .signature ,#record .signature {
    position: relative;
    top: 10px;
    right: 50px;
