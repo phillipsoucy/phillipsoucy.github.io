@@ -54,46 +54,55 @@
 
    <!-- Graduate Section
    ================================================== -->
-   <section id="mechlab">
+   <section id="height">
 
       <div class="row">
 
          <div class="three columns">
 
-            <img class="overview-pic"  src="../images/mechlab/lab.jpg"/>
+            <img class="overview-pic"  src="../images/OCWHM/height.jpg"/>
 
          </div>
 
          <div class="nine columns main-col">
 
-            <h2>Mechatronics Lab for Graduate Students</h2>
+            <h2>Height Measurement Unit</h2>
 
-            <p> For my graduate mechatronics course, small teams were asked to take a simple principle of 
-			mechatronics and develop a short (6-8 hour) lab based on that principle for future classes. My team was tasked
-			with using strain gauges and instrument amplification. We elected to develop a lab to demonstrate how a simple
-			instrument amplification (InAmp) chip and Arduino UNO could be used in junction with strain gauges to study and
-			characterize a relatively complex dynamic mechanical system. My role in this project was group leader, primarily
-			for document and timeline organization, as well as designing and implementing the physical system, showing that
-			the analytical approximation correlates well with this system.</p>
+            <p> In the winter of 2018, N12 Technologies began earnest development of a wide-format 
+			version of their product, NanoStich. However, after transitioning to a large-format 
+			substrate, their exisitng quality control systems could no longer analyze the product 
+			without extensive sample preparation. As the on-site engineer, I was asked to produce an 
+			offline quality control tool capable of measuring the thickness of the product layer on 
+			the substrate to within &plusmn;5&mu;m. The substrate is a thin foil, and therefore easily flexes.</p>
 			
-			<img class="pic"  src="../images/mechlab/mechlab_diagram.jpg"/>
-			<p class="fig">Figure 1: Schematic of electromechanical components.<p>
+			<p> After researching possible technologies, I decided that a rastering laser certain would be 
+			an affordable and effective solution. I sourced a linear stage and laser micrometer with acceptable 
+			specifications, and began designing a method to fixture the sample. 
+			Because the substrate is coated entirely on one surface, and due to process contaminants 
+			on the opposite face, measuring the sample non-destructively was not an option. My goal then  
+			became reducing measurement time and required operator training as much as possible, without 
+			sacrificing measurement resolution. The final design (Figure 1) is capable of measuring any sample up to 
+			24 inches in width, and calculates height data to within &plusmn;4&mu;m (validated against SEM date). 
+			With slower scans, it was able to consistently calculate data to within &plusmn;1.5&mu;m, though I 
+			opted to reduce read time over the additional increase in resolution.</p>
 			
-			<p> I designed a vibrating cantilever beam system, excited by a stepper motor and eccentric mass at the tip of the
-			beam. A diagram of the system is shown in Figure 1. Special considerations during this process included selected a 
-			beam geometry which had a natural frequency safely below the Nyquist frequency of the UNO. In addition, the peak amplitude 
-			had to be large enough to be detected by the InAmp and UNO circuit, but not so large as to cause plastic deformation at 
-			the base, which would have damaged the strain gauges. Figure 2 shows the final experimental system.</p>
+			<img class="pic"  src="../images/OCWHM/height-overview.jpg"/>
+			<p class="fig">Figure 1: Rendered isometric view of height measurement unit.<p>
 			
-			<img class="pic"  src="../images/mechlab/mechlab_overview.jpg"/>
-			<p class="fig">Figure 2: Overview of final experimental system. The black box holds all the electronics, with the exception of the motor shield, which needed to be unplugged for certain tests.<p>
+			<p> I opted for a 3-point "tent" fixture, which limits operator setup time while also providing 
+			a strong reference surface for the laser micrometer to read. The operator is able to slide 
+			a sample in with almost no alignment, actuate the clamp bars down, then the reference bar up. The result 
+			(cutaway shown in Figure 2) is a peak in the substrate that generates high contrast for the laser. After rastering the laser once, 
+			the operator removes the surface coating and repeats the scan. The processing software (written by my colleague) 
+			processes the data delta and generates a height profile.</p>
 			
-			<p> After verifying our experimental and analytical systems, my team and I drafted a comprehensive lab pack 
-			(which can be downloaded <a href="..\portfolio\docs\Cantilever Dynamics Lab Pack.zip" target="_blank">here</a>). I was primarily focused on the lab instructions, while my teammates created a solution
-			manual and organized our presentation.</p>
+			<img class="pic"  src="../images/OCWHM/height-cut.jpg"/>
+			<p class="fig">Figure 2: Cutaway showing 3-point "tent" fixture. Clamp bars circled in green, reference bar circled in blue, and resulting substrate path highlighted in purple.<p>
 			
-			<img class="pic"  src="../images/mechlab/mechlab_results.jpg"/>
-			<p class="fig">Figure 3: Sample experimental data during pluck test, plotted over time in Excel. Clipping occurs due to the UNO being unable to detect negative voltages.<p>
+			<p> One note about the design: something this size could have easily been made from a welded frame. However, 
+			given time constraints and quoted leadtimes from metalworking shops, I elected to make the design 
+			out of flat plates connected by fasteners. I was able to design many of the plates to require only 
+			one fixture operations, significantly reducing the fabrication leadtime.</p>
 			
             </div> <!-- end row -->
 
@@ -334,8 +343,8 @@
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2017 Phillip A. Soucy</li>
-			   <li>Rev 3.1</li> 
+               <li>&copy; Copyright 2018 Phillip A. Soucy</li>
+			   <li>Rev 3.2</li> 
                <li>Graciously design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
             </ul>
 
