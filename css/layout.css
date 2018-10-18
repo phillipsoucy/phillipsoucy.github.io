@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 3.2.1
+*	Rev 3.3
 *
 =====================================================================
 
@@ -380,6 +380,11 @@ ul#nav li.current a { color: #517FC2; }
    border-bottom: 3px solid #517FC2;
    padding-bottom: 6px;
 }
+#resume h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   margin-top:-50px;
+   margin-bottom: 12px;
+}
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
@@ -388,6 +393,12 @@ ul#nav li.current a { color: #517FC2; }
    margin-right: -50px;
    margin-bottom: 25px;
 }
+#resume p2 {
+   text-align: justify;
+   margin-right: -50px;
+   margin-bottom: 10px;
+}
+
 #resume .a {
    margin-left: 20px;
    margin-right: -60px;
@@ -399,8 +410,21 @@ ul#nav li.current a { color: #517FC2; }
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
-
-.education, .work , .research{
+#resume .download .button {
+   margin-top: 6px;
+   margin-bottom: -6px;
+   background: #444;
+   color: #fff;
+}
+#resume .download .button:hover{
+   background: #517FC2;
+   color: #2B2B2B;
+}
+#resume .download .button i{
+   margin-right: 15px;
+   font-size: 20px;
+}
+.contact, .work , .research{
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
