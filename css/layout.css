@@ -505,8 +505,13 @@ ul#nav li.current a { color: #517FC2; }
    border-radius: 3px 0 0 3px;
 }
 
+.hands {
+  	width: 99.99%;
+  	-moz-animation: hands 2s ease;
+  	-webkit-animation: hands 2s ease;
+}
 .writing {
-  	width: 99%;
+  	width: 99.99%;
   	-moz-animation: writing 2s ease;
   	-webkit-animation: writing 2s ease;
 }
@@ -515,77 +520,70 @@ ul#nav li.current a { color: #517FC2; }
   	-moz-animation: cad 2s ease;
   	-webkit-animation: cad 2s ease;
 }
-.tests {
-  	width: 85%;
-  	-moz-animation: tests 2s ease;
-  	-webkit-animation: tests 2s ease;
-}
 .design {
   	width: 80%;
   	-moz-animation: design 2s ease;
   	-webkit-animation: design 2s ease;
 }
-.abaqus {
-  	width: 65%;
-  	-moz-animation: abaqus 2s ease;
-  	-webkit-animation: abaqus 2s ease;
-}
 .management {
-  	width: 55%;
+  	width: 70%;
   	-moz-animation: management 2s ease;
   	-webkit-animation: management 2s ease;
 }
+.fea {
+  	width: 65%;
+  	-moz-animation: fea 2s ease;
+  	-webkit-animation: fea 2s ease;
+}
 
-
+@-moz-keyframes hands {
+  0%   { width: 0px;  }
+  100% { width: 99.99%;  }
+}
 @-moz-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 99%;  }
+  100% { width: 99.99%;  }
 }
 @-moz-keyframes cad {
   0%   { width: 0px;  }
   100% { width: 92%;  }
 }
-@-moz-keyframes tests {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
 @-moz-keyframes design {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes abaqus {
+@-moz-keyframes management {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes fea {
   0%   { width: 0px;  }
   100% { width: 65%;  }
 }
-@-moz-keyframes management {
+
+@-webkit-keyframes hands {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 99.99%;  }
 }
-
-
 @-webkit-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 99%;  }
+  100% { width: 99.99%;  }
 }
 @-webkit-keyframes cad {
   0%   { width: 0px;  }
   100% { width: 92%;  }
 }
-@-webkit-keyframes tests {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
 @-webkit-keyframes design {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes abaqus {
-  0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
 @-webkit-keyframes management {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes fea {
+  0%   { width: 0px;  }
+  100% { width: 65%;  }
 }
 
 /* ------------------------------------------------------------------ */
