@@ -8,7 +8,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Portfolio</title>
-	<meta name="description" content="Portfolio Page for Phillip Soucy, Cambridge, MA based mechanical engineer.">
+	<meta name="description" content="Portfolio Page for Phillip Soucy, Boston-based mechanical engineer.">
 	<meta name="author" content="Phillip Soucy">
 
    <!-- Mobile Specific Metas
@@ -42,9 +42,9 @@
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
          <ul id="nav" class="nav">
             <li><a href="../index.html#portfolio">Return to Home</a></li>
-			<li><a class="smoothscroll" href="#mechlab">Mechatronics Lab</a></li>
+			<li><a class="smoothscroll" href="#height">Height Measurement</a></li>
+			<li><a class="smoothscroll" href="#coupler">Kinematic Coupler</a></li>
 			<li><a class="smoothscroll" href="#bop">BOP Failure</a></li>
-			<li><a class="smoothscroll" href="#fittings">Brass Fittings</a></li>
 			<li><a class="smoothscroll" href="#transmission">Transmission Arms</a></li>
 			<li><a class="smoothscroll" href="#record">Record Player</a></li>
             <li><a href="../index.html#contact">Contact</a></li>
@@ -52,8 +52,9 @@
       </nav> <!-- end #nav-wrap -->
    </section> <!-- Header End -->
 
-   <!-- Graduate Section
+   <!-- Height Measurement Section
    ================================================== -->
+       
    <section id="height">
 
       <div class="row">
@@ -108,9 +109,56 @@
 
          </div> <!-- end .main-col -->
 
-   </section> <!-- About Section End-->
+   </section> <!-- Measurement Section End-->
    
-     
+<!-- Coupler Section
+   ================================================== -->
+   <section id="coupler">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/coupler/coupler.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Kinematic Coupler for Tool Changing</h2>
+
+            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
+			
+			<p>During proof-of-concept product development, it became apparent that the coupling mechanism provided to the
+			MAKE Composites design team by their partner was not going to perform adequately for testing and characterizing
+			the performance of their desktop carbon fiber composite additive manufacturing system. As a member of the design team,
+			I began working on an independent design that would be capable of both rapid tool changing, while also having 
+			sufficient strength to prevent the held tool from deflecting while engaged. The final product (demonstrated in 
+			Video 1) significantly outperformed the predecessor, and enabled the motion system development and characterization
+			to kick off.</p>
+			
+			<video class="video" controls>
+				<source src="../images/coupler/coupler_video.mp4">
+				Your browser does not support this video type.
+			</video>
+			<p class="fig">Video 1: Demonstration routine showing tool changing speed and repeatability using prototype kinematic coupler.<p>
+						
+			<p>The design utilizes several COTS parts, as well as few custom fabrication parts. The fundamental principle was
+			inspired by a piece of common workholding equipment used to expedite fixture changes in the CNC machining industry. 
+			As the tool mates with the coupler shank (Figure 1A), the engagement mechanism is retracted. Once at the full 
+			engagement distance (Figure 1B), which is generally set by alignment pins or a limit stop elsewhere on the assembly,
+			the engagement mechanism is actuated, causing a series of hardened balls in the shank to engage a ramp on the tool. 
+			Once the balls are fully bound between the members of the shank and tool mating surfaces (Figure 1C), the tool is locked into 
+			position by several hundred pounds of clamping force.</p>
+			
+			<img class="pic"  src="../images/coupler/coupler_schematic.jpg"/>
+			<p class="fig">Figure 1: A series of schematic cross-section illustrations depicting the engagement process between the shank and tool mating surfaces.<p>
+			
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+   </section> <!-- Coupler Section End-->     
    
       <!-- BOP Section
    ================================================== -->
@@ -136,7 +184,7 @@
 			to flow at the surface, causing the rig and well to be lost in an explosion (Figure 1). 
 			The resulting damages were claimed for over $5M in losses.</p>
 			
-			<img class="pic"  src="../images/bop/bop_failure.jpg"/>
+			<img class="pic"  src="../images/bop/bop_failure.png"/>
 			<p class="fig">Figure 1: Photographs of the extracted failed safety components.<p>
 			
 			<p>During the evidence tear-down and document review process, my group determined that 
@@ -146,7 +194,7 @@
 			differences between these components, known as packers, or if it was operator error. My team 
 			was again retained for an analytical comparative study of the OEM and third-party packers.</p>
 			
-			<img class="pic"  src="../images/bop/bop_packers.jpg"/>
+			<img class="pic"  src="../images/bop/bop_packers.png"/>
 			<p class="fig">Figure 2: CAD model of dissimilar packer plate geometries in Abaqus CAE.<p>
 			
 			<p>During this process, my role was inspecting, dimensioning, and modeling the two packer 
@@ -174,56 +222,7 @@
          </div> <!-- end .main-col -->
 
 
-   </section> <!-- About Section End-->
-   
-   <!-- Fittings Section
-   ================================================== -->
-   <section id="fittings">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="overview-pic"  src="../images/fittings/fittings.jpg"/>
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>Brass Fittings in Potable Water Systems</h2>
-
-            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
-			
-			<p>Over the course of several years, various consumer complaints were made that a particular 
-			brand of brass fitting was resulting in property damage due to premature corrosion and subsequent 
-			plumbing leakage. Due to the scale of potential damages, a class action lawsuit was filed against
-			the manufacturer. My team was retained to evaluate these fittings and determine the underlying 
-			cause of any premature failure.</p>
-			
-			<img class="pic"  src="../images/fittings/fittings_evidence.jpg"/>
-			<p class="fig">Figure 1: Example of extracted evidence, which includes fittings and tubing.<p>			
-						
-			<p>My role in this investigation was primarily focused around extracted evidence (an example shown in Figure 1). 
-			I photographed, categorized, and inventoried thousands of samples, developed test protocols, 
-			and conducted inter-party inspections over the course of a year. The tests varied in complexity, ranging from 
-			a simple microscopy to accelerated environmental exposure.</p>
-			
-			<img class="pic"  src="../images/fittings/fittings_sample.jpg"/>
-			<p class="fig">Figure 2: Exemplary sample that had been sectioned, mounted, polished, and imaged under a microscope to study the
-			corrosion of the brass.<p>	
-			
-			<p>Most notable was a three-day leak-testing inspection involving three separate parties, in 
-			which approximately 200 extracted samples were photographed and leak tested at our facilities. 
-			I oversaw the testing and sample organization, as well 
-			maintaining notes and records of the 10 lawyers and experts present as witnesses of the inspection. 
-			In addition to leak testing, I also developed and conducted the test protocol for additional sample 
-			tear-down, mounting, polishing, and microscopic metallurgical examination (shown in Figure 2).</p>
-			
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-   </section> <!-- About Section End-->
+   </section> <!-- BOP Section End-->
    
 <!-- Transmission Section
    ================================================== -->
@@ -280,7 +279,7 @@
          </div> <!-- end .main-col -->
 
 
-   </section> <!-- About Section End-->
+   </section> <!-- Transmission Section End-->
 
 <!-- Record Player Section
    ================================================== -->
@@ -326,7 +325,7 @@
 
          </div> <!-- end .main-col -->
 
-   </section> <!-- About Section End-->
+   </section> <!-- Record Section End-->
      
    <!-- footer
    ================================================== -->

@@ -196,22 +196,22 @@ ul#nav li.current a { color: #517FC2; }
 /* c. About Section - Dark
 /* ------------------------------------------------------------------ */
 
-#about,#height,#fittings,#record{
+#about,#height,#bop,#record{
    background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a,#height a,#fittings a,#record a,#about a:visited,#height a:visited,#fittings a:visited,#record a:visited {color: #fff;}
-#about a:hover,#height a:hover,#fittings a:hover,#about a:focus,#height a:focus,#fittings a:focus {color: #517FC2;}
+#about a,#height a,#bop a,#record a,#about a:visited,#height a:visited,#bop a:visited,#record a:visited {color: #fff;}
+#about a:hover,#height a:hover,#bop a:hover,#about a:focus,#height a:focus,#bop a:focus {color: #517FC2;}
 
-#about h2,#height h2,#fittings h2, #record h2 {
+#about h2,#height h2,#bop h2, #record h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
-#about p,#height p,#fittings p, #record p{
+#about p,#height p,#bop p, #record p{
    line-height: 30px;
    color: #cccccc;
    text-align: justify;
@@ -221,12 +221,12 @@ ul#nav li.current a { color: #517FC2; }
    font-weight: 600;
    letter-spacing: .02em;
 }
-#height p span,#fittings p span,#record p span{
+#height p span,#bop p span,#record p span{
    line-height: 30px;
    color: #cccccc;
    font-style: italic;
 }
-#height p.fig,#fittings p.fig,#record p.fig{
+#height p.fig,#bop p.fig,#record p.fig{
    line-height: 30px;
    color: #cccccc;
    font-style: italic;
@@ -234,93 +234,14 @@ ul#nav li.current a { color: #517FC2; }
    width: 80%;
    margin: auto;
 }
-#about p a:hover,#height p a:hover,#fittings p a:hover,#record p a:hover{color: #517FC2;}
+#about p a:hover,#height p a:hover,#bop p a:hover,#record p a:hover{color: #517FC2;}
 
-#height .overview-pic,#fittings .overview-pic,#record .overview-pic{
+#height .overview-pic,#bop .overview-pic,#record .overview-pic{
    position: relative;
    width: 200px;
    height: 200px;
 }
-#height .pic,#fittings .pic,#record .pic{
-   display: block;
-   margin: auto;
-   width: 95%;
-   margin: auto;
-}
-#about .profile-pic{
-   position: relative;
-   width: 200px;
-   height: 200px;
-   border-radius: 100%;
-}
-#about .contact-details,#height .contact-details,#fittings .contact-details,#record .contact-details{ width: 41.66667%; }
-#about .download,#height .download,,#fittings .download{
-   width: 58.33333%;
-   padding-top: 6px;
-}
-#about .main-col,#height .main-col,#fittings .main-col,#record .main-col{ padding-right: 5%; }
-#about .download .button,#height .download .button,#fittings .download .button,#record .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#about .download .button:hover,#height .download .button:hover,#fittings .download .button:hover,#record .download .button:hover{
-   background: #517FC2;
-   color: #2B2B2B;
-}
-#about .download .button i ,#height .download .button i ,#fittings .download .button i ,#record .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
-#about .signature ,#height .signature  ,#fittings .signature ,#record .signature {
-   position: relative;
-   top: 10px;
-   right: 50px;
-   width: 175px;
-}
-
-/* ------------------------------------------------------------------ */
-/* c. Section - Light
-/* ------------------------------------------------------------------ */
-
-#bop,#transmission{
-   background: #fff;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-}
-
-#bop a,#transmission a, #bop a:visited,#transmission a:visited  { color: #517FC2; }
-#bop a:hover,#transmission a:hover, #bop a:focus,#transmission a:focus { color: #313131; }
-
-#bop h2,#transmission h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   margin-bottom: 12px;
-}
-#bop p,#transmission p {
-   line-height: 30px;
-   color: #444444;
-   text-align: justify;
-}
-#bop p span,#transmission p span{
-   color: #444444;
-   font-style: italic;
-}
-#bop p.fig,#transmission p.fig{
-   line-height: 30px;
-   color: #444444;
-   font-style: italic;
-   text-align: center;
-   width: 80%;
-   margin: auto;
-}
-#bop p a:hover,#transmission p a:hover{color: #517FC2;}
-
-#bop .overview-pic,#transmission .overview-pic {
-   position: relative;
-   width: 200px;
-   height: 200px;
-}
-#bop .pic,#transmission .pic{
+#height .pic,#bop .pic,#record .pic{
    display: block;
    margin: auto;
    width: 95%;
@@ -332,25 +253,110 @@ ul#nav li.current a { color: #517FC2; }
    width: 95%;
    margin: auto;
 }
-#bop .contact-details,#transmission .contact-details { width: 41.66667%; }
-#bop .download,#transmission .download {
+#about .profile-pic{
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+}
+#about .contact-details,#height .contact-details,#bop .contact-details,#record .contact-details{ width: 41.66667%; }
+#about .download,#height .download,,#bop .download{
    width: 58.33333%;
    padding-top: 6px;
 }
-#bop .main-col,#transmission .main-col { padding-right: 5%; }
-#bop .download .button,#transmission .download .button {
+#about .main-col,#height .main-col,#bop .main-col,#record .main-col{ padding-right: 5%; }
+#about .download .button,#height .download .button,#bop .download .button,#record .download .button {
    margin-top: 6px;
    background: #444;
 }
-#bop .download .button:hover,#transmission .download .button:hover {
+#about .download .button:hover,#height .download .button:hover,#bop .download .button:hover,#record .download .button:hover{
    background: #517FC2;
    color: #2B2B2B;
 }
-#bop .download .button i ,#transmission .download .button i {
+#about .download .button i ,#height .download .button i ,#bop .download .button i ,#record .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
-#bop .signature ,#transmission .signature {
+#about .signature ,#height .signature  ,#bop .signature ,#record .signature {
+   position: relative;
+   top: 10px;
+   right: 50px;
+   width: 175px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Section - Light
+/* ------------------------------------------------------------------ */
+
+#coupler,#transmission{
+   background: #fff;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#coupler a,#transmission a, #coupler a:visited,#transmission a:visited  { color: #517FC2; }
+#coupler a:hover,#transmission a:hover, #coupler a:focus,#transmission a:focus { color: #313131; }
+
+#coupler h2,#transmission h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   margin-bottom: 12px;
+}
+#coupler p,#transmission p {
+   line-height: 30px;
+   color: #444444;
+   text-align: justify;
+}
+#coupler p span,#transmission p span{
+   color: #444444;
+   font-style: italic;
+}
+#coupler p.fig,#transmission p.fig{
+   line-height: 30px;
+   color: #444444;
+   font-style: italic;
+   text-align: center;
+   width: 80%;
+   margin: auto;
+}
+#coupler p a:hover,#transmission p a:hover{color: #517FC2;}
+
+#coupler .overview-pic,#transmission .overview-pic {
+   position: relative;
+   width: 200px;
+   height: 200px;
+}
+#coupler .pic,#transmission .pic{
+   display: block;
+   margin: auto;
+   width: 95%;
+   margin: auto;
+}
+#coupler .video{
+   display: block;
+   margin: auto;
+   width: 95%;
+   margin: auto;
+}
+#coupler .contact-details,#transmission .contact-details { width: 41.66667%; }
+#coupler .download,#transmission .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#coupler .main-col,#transmission .main-col { padding-right: 5%; }
+#coupler .download .button,#transmission .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#coupler .download .button:hover,#transmission .download .button:hover {
+   background: #517FC2;
+   color: #2B2B2B;
+}
+#coupler .download .button i ,#transmission .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+#coupler .signature ,#transmission .signature {
    position: relative;
    top: 10px;
    right: 50px;
@@ -502,7 +508,7 @@ ul#nav li.current a { color: #517FC2; }
    display: inline-block;
   	height: 42px;
    line-height: 42px;
-   border-radius: 3px 0 0 3px;
+   border-radius: 3px 3px 3px 3px;
 }
 
 .hands {
@@ -535,6 +541,11 @@ ul#nav li.current a { color: #517FC2; }
   	-moz-animation: fea 2s ease;
   	-webkit-animation: fea 2s ease;
 }
+.mech {
+  	width: 55%;
+  	-moz-animation: mech 2s ease;
+  	-webkit-animation: mech 2s ease;
+}
 
 @-moz-keyframes hands {
   0%   { width: 0px;  }
@@ -560,6 +571,10 @@ ul#nav li.current a { color: #517FC2; }
   0%   { width: 0px;  }
   100% { width: 65%;  }
 }
+@-moz-keyframes mech {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
 
 @-webkit-keyframes hands {
   0%   { width: 0px;  }
@@ -584,6 +599,10 @@ ul#nav li.current a { color: #517FC2; }
 @-webkit-keyframes fea {
   0%   { width: 0px;  }
   100% { width: 65%;  }
+}
+@-webkit-keyframes mech {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
 }
 
 /* ------------------------------------------------------------------ */
