@@ -4,7 +4,7 @@
 *   url: styleshout.com
 *   03-18-2014
 *
-*	Rev 3.5
+*	Rev 4.0
 *
 =====================================================================
 
@@ -531,10 +531,10 @@ ul#nav li.current a { color: #517FC2; }
   	-moz-animation: design 2s ease;
   	-webkit-animation: design 2s ease;
 }
-.management {
+.definition {
   	width: 70%;
-  	-moz-animation: management 2s ease;
-  	-webkit-animation: management 2s ease;
+  	-moz-animation: definition 2s ease;
+  	-webkit-animation: definition 2s ease;
 }
 .fea {
   	width: 65%;
@@ -563,7 +563,7 @@ ul#nav li.current a { color: #517FC2; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes management {
+@-moz-keyframes definition {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
@@ -592,7 +592,7 @@ ul#nav li.current a { color: #517FC2; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes management {
+@-webkit-keyframes definition {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
