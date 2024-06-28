@@ -21,7 +21,7 @@
    <link rel="stylesheet" href="../css/layout.css">
    <link rel="stylesheet" href="../css/media-queries.css">
    <link rel="stylesheet" href="../css/magnific-popup.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
    <!-- Script
    ================================================== -->
@@ -48,20 +48,76 @@
    <!-- Header
    ================================================== -->
    <section id="top">
-      <nav id="nav-wrap">
+      <nav id="nav-wrap" class="opaque">
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
          <ul id="nav" class="nav">
-            <li><a href="../index.html#portfolio">Return to Home</a></li>
+            <li><a href="../index.html#portfolio"><b>Return to Home</b></a></li>
+			<li><a class="smoothscroll" href="#mixer">Drug Mixer</a></li>
 			<li><a class="smoothscroll" href="#height">Height Measurement</a></li>
 			<li><a class="smoothscroll" href="#coupler">Kinematic Coupler</a></li>
 			<li><a class="smoothscroll" href="#bop">BOP Failure</a></li>
 			<li><a class="smoothscroll" href="#transmission">Transmission Arms</a></li>
 			<li><a class="smoothscroll" href="#record">Record Player</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
       </nav> <!-- end #nav-wrap -->
    </section> <!-- Header End -->
+
+<!-- Drug Mixer Section
+   ================================================== -->
+   <section id="mixer">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="overview-pic"  src="../images/mixer/mixer.jpg"/>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Drug Mixer and Auto-Injector</h2>
+			
+				<p style="text-align:left;margin: 0 0 10px 0;"><i>Due to the confidential nature of this project, certain details have been omitted.</i></p>
+			
+			<h5>Overview</h5>
+				<p>While working for Helbling Precision Engineering, I was part of a two-person team tasked with developing an automated drug mixing and delivery device. Each of us focued on the development of one concept, ultimately delivering two innovative proof-of-concept (POC) devices to our client, who was very satisfied.</p>
+
+			<h5>Unique Challenge</h5>
+				<p>There were two key requirements of this project that created a unique design obstacle.
+				<ol>
+					<li>The device must cyclically mix a high-viscosity drug once activated, up to 30 cycles/minute, preferable with a single user inputs.</li>
+					<li>The device must be fully mechanical - no electronics.</li>
+				</ol>
+					While each requirement on it's own would be a fair challenge, when coupled with a 5-month development timeline they required an extremely creative and efficient development approach.</p>
+				
+			<h5>The Solution</h5>
+				<p>We utilized a ground-up engineering approach - starting with defining individual device functions, generating ideas for mechanisms that accomplish each, combining these ideas into practical concepts, then preliminarily evaluating these concepts based on the requirements provided by the client (Figure 1). We identified a handful of promising solutions, and ultimately selected two to progress to a POC prototype phase.
+				</p>
+				
+<!-- 				<img class="pic"  src="../images/mixer/mixer_overview.jpg"/>
+				<p class="fig">Figure 1: A series of schematic cross-section illustrations depicting the engagement process between the shank and tool mating surfaces.<p> -->
+				
+				<p>The concept I was primarily responsible for developing utilized a compressed gas cartridge and internal valving to mix the drug. Once activated by the user, a complex system of mechanisms enabled a small number of user inputs to achieve the significant number of required device states. With each intermittent button press, the internal mechanism states changed to generate a mixing cycle. The final POC demonstration is shown in Video 1.</p>
+				
+				<video class="video" style="width:50%" controls>
+				<source src="../images/mixer/mixer_video.mp4">
+				Your browser does not support this video type.
+				</video>
+				<p class="fig">Video 1: Demonstration of proof of concept prototype functionality. Device achieved all performance requirements set by client.<p>
+						
+				<p>Though a prototype, DFMA principles were considered throughout the design, and several COTS parts were utilized as possible. All in all, the development of this concept over a short 5 month period was received exceptionally well by the client, and they ultimately ended up pursiing this concept as their primary development path.</p>
+			
+			<h5>What I Learned</h5>
+				<p>This was the first project that I was responsible for the complete development of a device from idea generation through prototyping. It challenged my understanding of pneumatics and DFMA, and required revisiting many engineering subjects not leveraged since my education. Additionally, with user experience being core to the success of the concepts, I spent a significant portion of the development thinking about not just how to accomplish the mechanical tasks, but also ensuring the use case remained simple and intuitive.</p>
+				
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+   </section> <!-- Mixer Section End-->     
 
    <!-- Height Measurement Section
    ================================================== -->
@@ -80,41 +136,19 @@
 
             <h2>Height Measurement Unit</h2>
 
-            <p> In the winter of 2018, N12 Technologies began earnest development of a wide-format 
-			version of their product, NanoStich. However, after transitioning to a large-format 
-			substrate, their exisitng quality control systems could no longer analyze the product 
-			without extensive sample preparation. As the on-site engineer, I was asked to produce an 
-			offline quality control tool capable of measuring the thickness of the product layer on 
-			the substrate to within &plusmn;5&mu;m. The substrate is a thin foil, and therefore easily flexes.</p>
+            <p> In the winter of 2018, N12 Technologies began earnest development of a wide-format version of their product, NanoStich. However, after transitioning to a large-format substrate, their exisitng quality control systems could no longer analyze the product without extensive sample preparation. As the on-site engineer, I was asked to produce an offline quality control tool capable of measuring the thickness of the product layer on the substrate to within &plusmn;5&mu;m. The substrate is a thin foil, and therefore easily flexes.</p>
 			
-			<p> After researching possible technologies, I decided that a rastering laser certain would be 
-			an affordable and effective solution. I sourced a linear stage and laser micrometer with acceptable 
-			specifications, and began designing a method to fixture the sample. 
-			Because the substrate is coated entirely on one surface, and due to process contaminants 
-			on the opposite face, measuring the sample non-destructively was not an option. My goal then  
-			became reducing measurement time and required operator training as much as possible, without 
-			sacrificing measurement resolution. The final design (Figure 1) is capable of measuring any sample up to 
-			24 inches in width, and calculates height data to within &plusmn;4&mu;m (validated against SEM date). 
-			With slower scans, it was able to consistently calculate data to within &plusmn;1.5&mu;m, though I 
-			opted to reduce read time over the additional increase in resolution.</p>
+			<p> After researching possible technologies, I decided that a rastering laser certain would be an affordable and effective solution. I sourced a linear stage and laser micrometer with acceptable specifications, and began designing a method to fixture the sample. Because the substrate is coated entirely on one surface, and due to process contaminants on the opposite face, measuring the sample non-destructively was not an option. My goal then  became reducing measurement time and required operator training as much as possible, without sacrificing measurement resolution. The final design (Figure 1) is capable of measuring any sample up to 24 inches in width, and calculates height data to within &plusmn;4&mu;m (validated against SEM date). With slower scans, it was able to consistently calculate data to within &plusmn;1.5&mu;m, though I opted to reduce read time over the additional increase in resolution.</p>
 			
 			<img class="pic"  src="../images/OCWHM/height-overview.jpg"/>
 			<p class="fig">Figure 1: Rendered isometric view of height measurement unit.<p>
 			
-			<p> I opted for a 3-point "tent" fixture, which limits operator setup time while also providing 
-			a strong reference surface for the laser micrometer to read. The operator is able to slide 
-			a sample in with almost no alignment, actuate the clamp bars down, then the reference bar up. The result 
-			(cutaway shown in Figure 2) is a peak in the substrate that generates high contrast for the laser. After rastering the laser once, 
-			the operator removes the surface coating and repeats the scan. The processing software (written by my colleague) 
-			processes the data delta and generates a height profile.</p>
+			<p> I opted for a 3-point "tent" fixture, which limits operator setup time while also providing a strong reference surface for the laser micrometer to read. The operator is able to slide a sample in with almost no alignment, actuate the clamp bars down, then the reference bar up. The result (cutaway shown in Figure 2) is a peak in the substrate that generates high contrast for the laser. After rastering the laser once, the operator removes the surface coating and repeats the scan. The processing software (written by my colleague) processes the data delta and generates a height profile.</p>
 			
 			<img class="pic"  src="../images/OCWHM/height-cut.jpg"/>
 			<p class="fig">Figure 2: Cutaway showing 3-point "tent" fixture. Clamp bars circled in green, reference bar circled in blue, and resulting substrate path highlighted in purple.<p>
 			
-			<p> One note about the design: something this size could have easily been made from a welded frame. However, 
-			given time constraints and quoted leadtimes from metalworking shops, I elected to make the design 
-			out of flat plates connected by fasteners. I was able to design many of the plates to require only 
-			one fixture operations, significantly reducing the fabrication leadtime.</p>
+			<p> One note about the design: something this size could have easily been made from a welded frame. However, given time constraints and quoted leadtimes from metalworking shops, I elected to make the design out of flat plates connected by fasteners. I was able to design many of the plates to require only one fixture operations, significantly reducing the fabrication leadtime.</p>
 			
             </div> <!-- end row -->
 
@@ -138,15 +172,9 @@
 
             <h2>Kinematic Coupler for Tool Changing</h2>
 
-            <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
+            <p style="text-align:left;margin: 0 0 10px 0;"><i>Due to the confidential nature of this project, certain details have been omitted.</i></p>
 			
-			<p>During proof-of-concept product development, it became apparent that the coupling mechanism provided to the
-			MAKE Composites design team by their partner was not going to perform adequately for testing and characterizing
-			the performance of their desktop carbon fiber composite additive manufacturing system. As a member of the design team,
-			I began working on an independent design that would be capable of both rapid tool changing, while also having 
-			sufficient strength to prevent the held tool from deflecting while engaged. The final product (demonstrated in 
-			Video 1) significantly outperformed the predecessor, and enabled the motion system development and characterization
-			to kick off.</p>
+			<p>During proof-of-concept product development, it became apparent that the coupling mechanism provided to the MAKE Composites design team by their partner was not going to perform adequately for testing and characterizing the performance of their desktop carbon fiber composite additive manufacturing system. As a member of the design team, I began working on an independent design that would be capable of both rapid tool changing, while also having sufficient strength to prevent the held tool from deflecting while engaged. The final product (demonstrated in Video 1) significantly outperformed the predecessor, and enabled the motion system development and characterization to kick off.</p>
 			
 			<video class="video" controls>
 				<source src="../images/coupler/coupler_video.mp4">
@@ -154,13 +182,7 @@
 			</video>
 			<p class="fig">Video 1: Demonstration routine showing tool changing speed and repeatability using prototype kinematic coupler.<p>
 						
-			<p>The design utilizes several COTS parts, as well as few custom fabrication parts. The fundamental principle was
-			inspired by a piece of common workholding equipment used to expedite fixture changes in the CNC machining industry. 
-			As the tool mates with the coupler shank (Figure 1A), the engagement mechanism is retracted. Once at the full 
-			engagement distance (Figure 1B), which is generally set by alignment pins or a limit stop elsewhere on the assembly,
-			the engagement mechanism is actuated, causing a series of hardened balls in the shank to engage a ramp on the tool. 
-			Once the balls are fully bound between the members of the shank and tool mating surfaces (Figure 1C), the tool is locked into 
-			position by several hundred pounds of clamping force.</p>
+			<p>The design utilizes several COTS parts, as well as few custom fabrication parts. The fundamental principle was inspired by a piece of common workholding equipment used to expedite fixture changes in the CNC machining industry. As the tool mates with the coupler shank (Figure 1A), the engagement mechanism is retracted. Once at the full engagement distance (Figure 1B), which is generally set by alignment pins or a limit stop elsewhere on the assembly, the engagement mechanism is actuated, causing a series of hardened balls in the shank to engage a ramp on the tool. Once the balls are fully bound between the members of the shank and tool mating surfaces (Figure 1C), the tool is locked into position by several hundred pounds of clamping force.</p>
 			
 			<img class="pic"  src="../images/coupler/coupler_schematic.jpg"/>
 			<p class="fig">Figure 1: A series of schematic cross-section illustrations depicting the engagement process between the shank and tool mating surfaces.<p>
@@ -189,44 +211,26 @@
 
             <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
 			
-			<p>In the spring of 2011 an oil well began back-flowing at the surface, in a failure mode referred to 
-			as a blowout. All oil rigs are equipped with failsafe hydraulic shutoff values, known as 
-			a blowout preventers (BOP), to arrest this type of failure. However, when the BOPs were activated on this rig, the well continued 
-			to flow, resulting in an explosion that consumed the rig and well (Figure 1). 
-			The resulting damages were claimed for over $5M in losses.</p>
+			<p>In the spring of 2011 an oil well began back-flowing at the surface, in a failure mode referred to as a blowout. All oil rigs are equipped with failsafe hydraulic shutoff values, known as a blowout preventers (BOP), to arrest this type of failure. However, when the BOPs were activated on this rig, the well continued to flow, resulting in an explosion that consumed the rig and well (Figure 1). The resulting damages were claimed for over $5M in losses.</p>
 			
 			<img class="pic"  src="../images/bop/bop_failure.png"/>
 			<p class="fig">Figure 1: Photographs of the extracted failed safety components.<p>
 			
-			<p>During the evidence tear-down and document review process, my team determined that 
-			certain critical components were replaced by less expensive non-OEM parts. 
-			After many years of discussion between the insurance, operating, and well-owning companies, 
-			there was no consensus as to whether the BOP failure was due to manufacturing 
-			differences between these components, known as packers, or if it was operator error. My team 
-			was again retained for an analytical comparative study of the OEM and third-party packers.</p>
+			<p>During the evidence tear-down and document review process, my team determined that certain critical components were replaced by less expensive non-OEM parts. After many years of discussion between the insurance, operating, and well-owning companies, there was no consensus as to whether the BOP failure was due to manufacturing differences between these components, known as packers, or if it was operator error. My team was again retained for an analytical comparative study of the OEM and third-party packers.</p>
 			
 			<img class="pic"  src="../images/bop/bop_packers.png"/>
 			<p class="fig">Figure 2: CAD model of dissimilar packer plate geometries in Abaqus CAE.<p>
 			
-			<p>During this process, I was responsibly for inspecting, dimensioning, and modeling the two packer 
-			geometries, as well as simulating the BOP activation process with each to determine if the 
-			geometric differences had a significant impact in the sealing progressing of the well. The 
-			models were a combination of 3D hyperelastic elastomer elements, non-deformable skeletal support 
-			geometry, and analytical-rigid surfaces (Figure 2). The results of my simulations showed that 
-			the sealing pattern was significantly different and, when compared with the erosion patterns
-			within the subject BOP, were the most likely cause of the well failure. The differences in 
-			sealing patterns are shown in Video 1, which has been censored for confidentiality. The video 
-			will play the sealing sequence twice, the first to show the progression, the second to emphasize 
-			the comparison with the physical evidence extracted from the well.</p>
+			<p>During this process, I was responsibly for inspecting, dimensioning, and modeling the two packer geometries, as well as simulating the BOP activation process with each to determine if the geometric differences had a significant impact in the sealing progressing of the well. The models were a combination of 3D hyperelastic elastomer elements, non-deformable skeletal support geometry, and analytical-rigid surfaces (Figure 2). The results of my simulations showed that the sealing pattern was significantly different and, when compared with the erosion patterns within the subject BOP, were the most likely cause of the well failure. The differences in sealing patterns are shown in Video 1, which has been censored for confidentiality. The video will play the sealing sequence twice, the first to show the progression, the second to emphasize the comparison with the physical evidence extracted from the well.</p>
+			
+			<p>While this case did go to trial, a settlement was made before the evidence went to deliberation. 
+			This outcome was attributed primarily to the analytical analysis performed by myself and my team.</p>
 			
 			<video class="video" controls>
 				<source src="../images/bop/bop_video.mp4">
 				Your browser does not support this video type.
 			</video>
 			<p class="fig">Video 1: Time progression of dissimilar packers closing on pipe. Surfaces not in contact are shown as red, while sealed surfaces are shown as green.<p>
-			
-			<p>While this case did go to trial, a settlement was made before the evidence went to deliberation. 
-			This outcome was attributed primarily to the analytical analysis performed by myself and my team.</p>
 			
             </div> <!-- end row -->
 
@@ -253,37 +257,17 @@
 
             <p><span>Due to the confidential nature of this project, certain details have been omitted.</span></p>
 			
-			<p>In the fall of 2013, multiple high-power electrical transmission tower arms began showing
-			signs of cracking at the weld between the arm and mounting bracket (Figure 1). In some cases,
-			the arm completely fractured from the bracket, leading to hundreds of miles of transmission arms 
-			being taken out of service for inspection. Our client retained my group for a comprehensive 
-			analysis of the failure, based on wind and arm strain data collected before the arms were removed
-			from service. My role was to review the provided manufacturing and installation documentation, 
-			inspect the subject arm brackets, and develop a versatile finite element model to explore our failure
-			mode hypotheses.</p>
+			<p>In the fall of 2013, multiple high-power electrical transmission tower arms began showing signs of cracking at the weld between the arm and mounting bracket (Figure 1). In some cases, the arm completely fractured from the bracket, leading to hundreds of miles of transmission arms being taken out of service for inspection. Our client retained my group for a comprehensive analysis of the failure, based on wind and arm strain data collected before the arms were removed from service. My role was to review the provided manufacturing and installation documentation, inspect the subject arm brackets, and develop a versatile finite element model to explore our failure mode hypotheses.</p>
 			
 			<img class="pic"  src="../images/transmission/transmission_failure.jpg"/>
 			<p class="fig">Figure 1: Example of failed bracket arm, showing arm separated from bracket at the weld.<p>
 			
-			<p>Based on the manufacturing design specifications, I modelled the arm and bracket in SolidWorks
-			and imported the geometry to Abaqus CAE. After meshing and boundary conditions, I used the strain
-			data from the previous wind studies to validate my model. My initial results, using a simple static
-			model, suggested that service loads alone could not have caused the premature weld fractures. After 
-			a physical examination of multiple subject failed arms, I determined that the spacing between the 
-			mounting plates of the bracket was regularly over-tolerance. In addition, I reviewed the field installation
-			notes, which showed inconsistent bolt tightening sequences and torques. To estimate the effects of these 
-			pre-service defects, I expanded the static model to include full-contact bolting of the arm to the pole, 
-			which I manipulated to consider various arm manufacturing and installation scenarios.</p>
+			<p>Based on the manufacturing design specifications, I modelled the arm and bracket in SolidWorks and imported the geometry to Abaqus CAE. After meshing and boundary conditions, I used the strain data from the previous wind studies to validate my model. My initial results, using a simple static model, suggested that service loads alone could not have caused the premature weld fractures. After a physical examination of multiple subject failed arms, I determined that the spacing between the mounting plates of the bracket was regularly over-tolerance. In addition, I reviewed the field installation notes, which showed inconsistent bolt tightening sequences and torques. To estimate the effects of these pre-service defects, I expanded the static model to include full-contact bolting of the arm to the pole, which I manipulated to consider various arm manufacturing and installation scenarios.</p>
 			
 			<img class="pic"  src="../images/transmission/transmission_contours.jpg"/>
 			<p class="fig">Figure 2: Estimated stress contours resulting from bracket design and installation errors.<p>
 			
-			<p>My results, shown in Figure 2, demonstrated that with a gap at the maximum design tolerance, smaller 
-			than the gap recorded during the inspection, and a correct bolt tightening sequence and torque, the stress 
-			in the weld would surpass yield in static conditions. Accounting for the additional effects of cycling 
-			dynamic wind loads, I demonstrated that the arm design tolerances would cause the welds to fail by yield 
-			and fatigue well before their expected service life. Based on my findings and our full report, our 
-			client was able to begin taking corrective action and consider liabilities.</p>
+			<p>My results, shown in Figure 2, demonstrated that with a gap at the maximum design tolerance, smaller than the gap recorded during the inspection, and a correct bolt tightening sequence and torque, the stress in the weld would surpass yield in static conditions. Accounting for the additional effects of cycling dynamic wind loads, I demonstrated that the arm design tolerances would cause the welds to fail by yield and fatigue well before their expected service life. Based on my findings and our full report, our client was able to begin taking corrective action and consider liabilities.</p>
 			
             </div> <!-- end row -->
 
@@ -308,36 +292,109 @@
 
             <h2>Record Player Restoration</h2>
 			
-			<p>After finding my partner's grandparent's 1956 Admiral Classic FN2 turntable, I was inspired to restore it 
-			to it's original working condition. I planned gut the internal electronics and replace them with the 
-			functional components of a more modern turntable. However, after some research I learned this model was one of 
-			the original High Fidelity tables produced. In addition, a quick diagnostic inspection found that the internals 
-			were in superb condition. After seeing this, I decided to keep everything as original as possible. I ordered 
-			some spare needles and tubes from eBay and began looking into restoring the electronics.</p>
+			<p>After finding my partner's grandparent's 1956 Admiral Classic 4N2 turntable, I was inspired to restore it to a working condition. I initially planned gut the internal electronics and replace them with the functional components of a more modern turntable. However, after some research I learned this model was one of the original High Fidelity tables produced. In addition, a quick diagnostic inspection found that the internals were in superb condition. After seeing this, I decided to keep everything as original as possible. I ordered some spare needles and tubes from eBay and began looking into restoring the electronics.</p>
 			
 			<img class="pic"  src="../images/record/record_internals.jpg"/>
 			<p class="fig">Figure 1: Record amp internals. All original capacitors were cardboard with wax.<p>			
 						
-			<p>I had planned to reference the component sizes and ratings from the casings, but overestimated the quality
-			of 60-year-old electronics. I thankfully found a circuit schematic to reference on a radio museum website. I 
-			considered designing a PCB to simply replace the birds-nest wiring (shown in Figure 1), but I wanted to 
-			preserve the antique sound and worried that may drastically alter it. After researching radio refurbishment, 
-			I decided to replace all of the capacitors, a select number of resistors, and the power cord. 
-			I also elected to instll a 5A inline fuse.</p>
+			<p>I had planned to reference the component sizes and ratings from the casings, but overestimated the quality of 60-year-old electronics. I thankfully found a circuit schematic on a radio museum website which I could reference. I considered designing a PCB to simply replace the birds-nest wiring (shown in Figure 1), but I wanted to preserve the antique sound and worried that may drastically alter it. After researching radio refurbishment, I decided to replace all of the capacitors, a select number of resistors, and the power cord. I also elected to install a 5A inline fuse.</p>
 			
 			<img class="pic"  src="../images/record/record_finished.jpg"/>
 			<p class="fig">Figure 2: After replacing all capacitors and select resistors.<p>	
 			
-			<p>While the record player is now functional (and filling my evenings with Steely Dan), there are a few more
-			components I would like to repair/replace to improve quality. The motor speed is irregular and slightly fast, but could 
-			easily be replaced by a modern DC motor and variable PSU. Additionally, the motor-to-table drive mechanism is a 
-			thin belt, which has began to harden and elongate. This could likely be replaced with a COTS part.</p>
+			<p>While the record player is now functional (and filling my evenings with Steely Dan), there are still a few more components I would like to repair/replace to improve listening quality. The motor speed is irregular and slightly fast, but could easily be replaced by a modern DC motor and variable PSU. Additionally, the motor-to-table drive mechanism is a thin belt, which has began to harden and elongate. This could likely be replaced with a COTS part.</p>
 			
             </div> <!-- end row -->
 
          </div> <!-- end .main-col -->
 
    </section> <!-- Record Section End-->
+   
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">I will gladly discuss the material and information presented here in greater detail, 
+				  as well as answer any questions you may have. Please reach out using my contact information below, or 
+				  simply complete the form and send it on its way.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="https://formspree.io/f/phillip.soucy@gmail.com" method="POST" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="email" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="subject" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="../images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               	<div id="message-warning"> Sending failed! Please try again.<br></div>
+               <!-- contact-success -->
+		<div id="message-success">
+                	<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+	   	</div>
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+               <div class="widget widget_contact">
+
+					   <h4>Contact Info</h4>
+					   <p class="address">
+							<span>Phillip Soucy</span><br>
+							<span>(781) 698-8032</span><br>
+							<span>phillip.soucy@gmail.com</span>
+							<br><br>
+							<a href="..\docs\Phillip Soucy Resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+					   </p>
+				   </div>
+            </aside>
+      </div>
+   </section> <!-- Contact Section End-->
      
    <!-- footer
    ================================================== -->
@@ -348,14 +405,14 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/phillipsoucy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.instagram.com/philnyethescienceguy/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="http://steamcommunity.com/id/SaintVenant/" target="_blank"><i class="fa fa-steam-square"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/phillipsoucy" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/philnyethescienceguy/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+<!--                <li><a href="http://steamcommunity.com/id/SaintVenant/" target="_blank"><i class="fa-brands fa-steam-square"></i></a></li> -->
             </ul>
 
             <ul class="copyright">
                <li>&copy; Copyright 2019 Phillip A. Soucy</li>
-			   <li>Rev 3.5</li> 
+			   <li>Rev 5.0</li> 
                <li>Graciously design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
             </ul>
 

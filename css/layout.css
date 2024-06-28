@@ -288,30 +288,30 @@ ul#nav li.current a { color: #517FC2; }
 /* c. Section - Light
 /* ------------------------------------------------------------------ */
 
-#coupler,#transmission{
+#mixer,#coupler,#transmission{
    background: #fff;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#coupler a,#transmission a, #coupler a:visited,#transmission a:visited  { color: #517FC2; }
-#coupler a:hover,#transmission a:hover, #coupler a:focus,#transmission a:focus { color: #313131; }
+#mixer a,#coupler a,#transmission a, #mixer a:visited,#coupler a:visited,#transmission a:visited  { color: #517FC2; }
+#mixer a:hover,#coupler a:hover,#transmission a:hover, #mixer a:focus,#coupler a:focus,#transmission a:focus { color: #313131; }
 
-#coupler h2,#transmission h2 {
+#mixer h2,#coupler h2,#transmission h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    margin-bottom: 12px;
 }
-#coupler p,#transmission p {
+#mixer p,#coupler p,#transmission p {
    line-height: 30px;
    color: #444444;
    text-align: justify;
 }
-#coupler p span,#transmission p span{
+#mixer p span,#coupler p span,#transmission p span{
    color: #444444;
    font-style: italic;
 }
-#coupler p.fig,#transmission p.fig{
+#mixer p.fig,#coupler p.fig,#transmission p.fig{
    line-height: 30px;
    color: #444444;
    font-style: italic;
@@ -319,44 +319,44 @@ ul#nav li.current a { color: #517FC2; }
    width: 80%;
    margin: auto;
 }
-#coupler p a:hover,#transmission p a:hover{color: #517FC2;}
+#mixer p a:hover,#coupler p a:hover,#transmission p a:hover{color: #517FC2;}
 
-#coupler .overview-pic,#transmission .overview-pic {
+#mixer .overview-pic,#coupler .overview-pic,#transmission .overview-pic {
    position: relative;
    width: 200px;
    height: 200px;
 }
-#coupler .pic,#transmission .pic{
+#mixer .pic,#coupler .pic,#transmission .pic{
    display: block;
    margin: auto;
    width: 95%;
    margin: auto;
 }
-#coupler .video{
+#mixer .video,#coupler .video{
    display: block;
    margin: auto;
    width: 95%;
    margin: auto;
 }
-#coupler .contact-details,#transmission .contact-details { width: 41.66667%; }
-#coupler .download,#transmission .download {
+#mixer .contact-details,#coupler .contact-details,#transmission .contact-details { width: 41.66667%; }
+#mixer .download,#coupler .download,#transmission .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#coupler .main-col,#transmission .main-col { padding-right: 5%; }
-#coupler .download .button,#transmission .download .button {
+#mixer .main-col,#coupler .main-col,#transmission .main-col { padding-right: 5%; }
+#mixer .download .button,#coupler .download .button,#transmission .download .button {
    margin-top: 6px;
    background: #444;
 }
-#coupler .download .button:hover,#transmission .download .button:hover {
+#mixer .download .button:hover,#coupler .download .button:hover,#transmission .download .button:hover {
    background: #517FC2;
    color: #2B2B2B;
 }
-#coupler .download .button i ,#transmission .download .button i {
+#mixer .download .button i ,#coupler .download .button i ,#transmission .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
-#coupler .signature ,#transmission .signature {
+#mixer .signature ,#coupler .signature ,#transmission .signature {
    position: relative;
    top: 10px;
    right: 50px;
@@ -432,7 +432,7 @@ ul#nav li.current a { color: #517FC2; }
 }
 .contact, .work , .research{
    margin-bottom: 48px;
-   padding-bottom: 24px;
+    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
 
@@ -860,12 +860,12 @@ ul#nav li.current a { color: #517FC2; }
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
+	color:#517FC2;
+    background: #444;
 	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
 	border-radius: 3px;
    margin-left: 26%;
 }

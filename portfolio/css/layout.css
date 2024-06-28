@@ -688,12 +688,12 @@ ul#nav li.current a { color: #517FC2; }
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
+	color:#517FC2;
+    background: #444;
 	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
 	border-radius: 3px;
    margin-left: 26%;
 }

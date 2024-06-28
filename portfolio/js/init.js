@@ -83,11 +83,11 @@
 		var y = $(window).scrollTop();
       var nav = $('#nav-wrap');
 
-	   if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
+	   if ( (y > 0) && (y < h) && ($(window).outerWidth() > 768 ) ) {
 	      nav.fadeOut('fast');
 	   }
       else {
-         if (y < h*.20) {
+         if (y < 0) {
             nav.removeClass('opaque').fadeIn('fast');
          }
          else {
@@ -137,7 +137,7 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
+/*    $('form#contactForm button.submit').click(function() {
 
       $('#image-loader').fadeIn();
 
@@ -151,7 +151,7 @@
 
       $.ajax({
 
-	      url: "https://formspree.io/phillip.soucy@gmail.com",
+	      url: "https://formspree.io/f/phillip.soucy@gmail.com",
 	      method: "POST",
 	      data: data,
 	      dataType: "json",
@@ -170,7 +170,7 @@
 
       });
       return false;
-   });
+   }); */
 
 
 });
